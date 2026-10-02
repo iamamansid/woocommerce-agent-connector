@@ -1,0 +1,16 @@
+# Copy these from the WooCommerce store's API key screen (WooCommerce > Settings > Advanced > REST API).
+# Keys below are placeholders; real values come from environment variables.
+connector:
+  woocommerce:
+    base-url: ${WC_BASE_URL:https://demo-store.example.com}
+    consumer-key: ${WC_CONSUMER_KEY:ck_placeholder}
+    consumer-secret: ${WC_CONSUMER_SECRET:cs_placeholder}
+    requests-per-second: ${WC_REQUESTS_PER_SECOND:5}
+    max-retries: ${WC_MAX_RETRIES:3}
+    request-timeout-seconds: ${WC_TIMEOUT_SECONDS:15}
+  demo:
+    enabled: false
+
+logging:
+  level:
+    com.aman.connector: INFO
